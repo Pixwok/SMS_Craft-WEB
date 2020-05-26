@@ -1,0 +1,170 @@
+/*RESET CSS*/
+body,div,fieldset,input,img,a,a:hover,select,li ,ul, p, h1, h2, h3, h4, h5, h6, iframe, strong
+{
+	margin:0;
+	padding:0;
+	border:0;
+	text-decoration:none;
+	outline:none;
+	list-style:none;
+	vertical-align:bottom;
+	white-space:normal;
+}
+
+/*MAIN CSS*/
+h1, h2, h3, h4, h5, h6, p, a, strong
+{
+    font-family: Arial, sans-serif;
+}
+main {
+    width: 90%;
+    margin: auto;
+}
+.description 
+{
+    margin: 2em;
+    font-size: 1.5em;
+    color: #666666;
+}
+/*NAV RS*/
+.nav-rs
+{
+    background-color: #393b3b;
+    height: 50px;
+}
+.content-rs
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 95%;
+}
+.rs a img
+{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    margin-right: 12px;
+}
+#twitter a img
+{
+    width: 32px;
+    height: 32px;
+    margin: 9px;
+}
+.status {
+    color: #ffffff;
+    position: absolute;
+    margin: 16px;
+}
+/*DYNMAP STYLE*/
+.dynmap 
+{
+    width: 100%;
+    height: 50em;
+    margin-bottom: 2.5em;
+}
+@media screen and (max-width: 1200px){
+    .dynmap
+    {
+        height: 25em;
+    }
+}
+.overlay-dynmap
+{
+    background-color: #393b3b;
+    height: 60px;
+    width: 100%;
+    margin-top: 2.5em;
+}
+.overlay-dynmap a img
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+.dynmap-block
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+/*FOOTER*/
+footer
+{
+    background-color: #393b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.copyright, .copyright> a, .copyright> a:visited
+{
+    text-align: center;
+    color: #ffffff;
+    font-size: 1em;
+}
+.copyright> a:hover
+{
+    color: #439eb0;
+}
+
+/*POPUP CREDIT*/
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0.85;
+}
+
+.popup-content {
+    background-color: #ececec;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgb(53, 53, 53);
+    border-radius: 7px;
+    width: 290px;
+    margin-top: 150px;
+}
+
+.close-popup {
+    color: #aaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-popup:hover,
+.close-popup:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.credit
+{
+    line-height: 40px;
+}
+.credit, .title-credit, .credit> a:visited {
+    color: #666666;
+    font-size: 20px;
+}
+.credit> a:hover {
+    color: #ff7615;
+}
+.separator {
+    background-color: #333333;
+    width: 70px;
+    height: 4px;
+    margin: 10px 0;
+}

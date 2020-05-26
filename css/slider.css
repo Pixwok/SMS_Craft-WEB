@@ -1,0 +1,103 @@
+.slider
+{
+    overflow: hidden;
+}
+.slider #slide
+{
+    position: relative;
+    width: 300%;
+    margin: 0;
+    left: 0;
+    animation: slider 20s infinite;
+}
+.title1 h1, .title2 h1, .title3 h1
+{
+    font-size: 5em;
+    color: #ffffff;
+    text-shadow: 1px 2px 2px #393b3b;
+}
+.title1 .rejoindre h2, .title2 .rejoindre h2, .title3 .rejoindre h2
+{
+    color: #ffffff;
+    font-size: 2.4em;
+    text-shadow: 1px 1px 2px #393b3b;
+    padding: 0.5em;
+}
+.title1 .rejoindre h2:hover, .title2 .rejoindre h2:hover, .title3 .rejoindre h2:hover,
+.title1 h1:hover, .title2 h1:hover, .title3 h1:hover 
+{
+    color: #439eb0;
+}
+.title1 h1, .title2 h1, .title3 h1
+{
+    padding-top: 2.8em;
+}
+.slider #slide .title1
+{
+    background-image: url(../img/slider1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 35em;
+    height: 35em;
+    text-align: center;
+    width: 33.33%;
+    float: left;
+}
+.slider #slide .title2
+{
+    background-image: url(../img/slider2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 35em;
+    height: 35em;
+    text-align: center;
+    width: 33.33%;
+    float: left;
+}
+.slider #slide .title3
+{
+    background-image: url(../img/slider3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 35em;
+    height: 35em;
+    text-align: center;
+    width: 33.33%;
+    float: left;
+}
+@media screen and (max-width: 900px){
+    .slider #slide .title1, .slider #slide .title2, .slider #slide .title3
+    {
+        background-size: 100% 15em;
+        height: 15em;
+    }
+    .title1 h1, .title2 h1, .title3 h1
+    {
+        padding-top: 2.5em;
+        font-size: 2em;
+    }
+    
+    .title1 .rejoindre h2, .title2 .rejoindre h2, .title3 .rejoindre h2
+    {
+        font-size: 1.4em;
+    }
+}
+
+@keyframes slider
+{
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    35% {
+        left: -100%;
+    }
+    60% {
+        left: -100%
+    }
+    75% {
+        left: -200%;
+    }
+    95% {
+        left: -200%;
+    }
+}

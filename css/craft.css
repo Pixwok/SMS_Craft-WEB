@@ -1,0 +1,24 @@
+.title-craft
+{
+    text-align: center;
+    color: #666666;
+    margin: 1em;
+    font-size: 2.5em;
+}
+.craft 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.craft-box
+{
+    margin: 1em;
+}
+.craft-name
+{
+    text-align: center;
+    color: #666666;
+    font-size: 1.5em;
+    margin: 0.4em;
+}

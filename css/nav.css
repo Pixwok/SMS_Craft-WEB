@@ -1,0 +1,86 @@
+/*BOUTON NAV RESPONSIVE*/
+.bouton-menu 
+{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    float: left;
+    margin: 6px;
+    display: none;
+    }
+    .bouton-menu span {
+    height: 3px;
+    background-color: #c3c3c3;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    }
+    .bouton-menu span:before
+    {
+    content: '';
+    height: 3px;
+    background-color: #c3c3c3;
+    width: 100%;
+    position: absolute;
+    top: -10px;
+    }
+    .bouton-menu span:after
+    {
+    content: '';
+    height: 3px;
+    background-color: #c3c3c3;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    }
+/*GLOBAL NAV*/
+nav 
+{
+    background-color: #393b3b;
+    height: 50px;
+    font-size: 1.9em;
+}
+.nav-content 
+{
+    display: flex;
+    flex-direction: row;
+    padding: 6px;
+    justify-content: space-around;
+    margin-left: 3.5em;
+}
+.nav-link
+{
+    margin-right: 0.5em;
+}
+.nav-link>a:visited, .nav-link>a
+{
+    color: #ffffff;
+}
+.nav-link> a:hover
+{
+    color: #439eb0;
+}
+/*RESPONSIVE 800 PX*/
+@media screen and (max-width: 800px){
+    /*BOUTON*/
+    .bouton-menu
+    {
+        display: block;
+    }
+    .nav-content
+    {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background-color: #393b3b;
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 0px;
+        display: none;
+    }
+    .active
+    {
+        display: block;
+    }
+}
